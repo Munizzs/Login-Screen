@@ -1,7 +1,5 @@
 package com.estudos.login_screen.models;
-
 import jakarta.persistence.*;
-
 import java.util.Set;
 
 @Entity @Table(name = "users")
@@ -20,9 +18,9 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "usuarios_autoridades",
-            joinColumns = @JoinColumn(name = "usuario_id"),
-            inverseJoinColumns = @JoinColumn(name = "autoridade_id")
+            name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
     )
     private Set<Role> roles;
 
