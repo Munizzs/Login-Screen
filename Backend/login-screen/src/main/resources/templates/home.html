@@ -9,6 +9,7 @@
     <div class="container_home">
         <div class="elements">
         <h1 class="center">Home</h1>
+            <p th:each="role : ${roles}" th:text="${role}">Nome da Autoridade</p>
             <p>Bem-vindo <span th:text="${nome}">Nome do Usuário</span></p>
             <p>Você está logado</p>
             <form action="/logout" method="post" class="center">
