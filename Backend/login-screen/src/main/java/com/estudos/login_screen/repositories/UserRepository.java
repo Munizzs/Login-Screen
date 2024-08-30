@@ -1,6 +1,6 @@
 package com.estudos.login_screen.repositories;
 
-import com.estudos.login_screen.models.User;
+import com.estudos.login_screen.models.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

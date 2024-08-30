@@ -1,6 +1,6 @@
 package com.estudos.login_screen.services;
 
-import com.estudos.login_screen.models.User;
+import com.estudos.login_screen.models.user.User;
 import com.estudos.login_screen.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;

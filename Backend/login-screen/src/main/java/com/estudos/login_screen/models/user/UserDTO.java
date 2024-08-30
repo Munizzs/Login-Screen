@@ -1,10 +1,11 @@
-package com.estudos.login_screen.models;
+package com.estudos.login_screen.models.user;
+
+import com.estudos.login_screen.models.Role;
 import jakarta.persistence.*;
+
 import java.util.Set;
 
-@Entity @Table(name = "users")
-public class User {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserDTO {
     private Integer id;
 
     @Column(nullable = false, unique = true)
