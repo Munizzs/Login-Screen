@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>User Management</h1>
+
+    <!-- Section to list all users -->
+    <section id="user-list">
+        <h2>All Users</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Roles</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="users">
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form to add or edit a user -->
+    <section id="user-form">
+        <h2>Add/Edit User</h2>
+        <form id="userForm">
+            <input type="hidden" id="userId">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="roles">Roles:</label>
+            <select id="roles" multiple required>
+            </select>
+
+            <label for="enable">Enabled:</label>
+            <input type="checkbox" id="enable">
+
+            <button type="submit">Save User</button>
+        </form>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
